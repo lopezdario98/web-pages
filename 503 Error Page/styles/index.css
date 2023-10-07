@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    animation: tracking-in-expand 1s cubic-bezier(.215, .61, .355, 1.000) both;
+}
+@keyframes tracking-in-expand {0% {letter-spacing: -.5em; opacity: 0} 40% {opacity: .6} 100% {opacity: 1}}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-size: 2em;
+    color: white;
+    letter-spacing: 3px;
+    text-shadow: darkolivegreen 3px 1px 5px;
+    margin: 2rem;
+    line-height: 3rem;
+}
+
+body {
+    font-family: "Merienda One", sans-serif;
+    margin: auto;
+    background-color: #faa499;
+    background-image: linear-gradient(319deg, #faa499 0%, #f7dd85 37%, #ffc55c 100%);
+}
+
+body .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+body .container #pikachu {
+    width: 20rem;
+    margin: 2rem;
+    filter: drop-shadow(0px 5px 30px white);
+}
